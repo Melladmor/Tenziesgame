@@ -40,7 +40,7 @@ function App() {
     setTenzies(true);
 
   }
-  },[dice])
+  },[dice,roll])
 
 
 
@@ -102,7 +102,7 @@ function App() {
 
     },1000)
     return ()=>clearInterval(timer)
-  },[time])
+  },[time,tenzies])
 
 
   const bestTime = localStorage.getItem('bestTime');
