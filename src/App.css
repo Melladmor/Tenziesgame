@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.App{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #0B2434;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px; 
+}
+.main{
+  width: 360px;
+  height: 360px;
+  background: #F5F5F5;
+  border-radius: 5px;
+}
+.mainText{
+  margin-top:34px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainText h1{
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25.6px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #2B283A;
+  margin-bottom: 7px;
+}
+.mainText p{
+  width: 70%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.1072px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #4A4E74;
+}
+
+
+/* Die component */
+
+.dieContainer{
+  margin-top: 20px;
+  display: grid;
+  grid-template: auto auto / repeat(5,1fr);
+  justify-content: center;
+  gap: 15px;
+}
+.DieSection{
+    width: 40px;
+    height: 40px;
+    box-shadow: 0px 2px 2px rgb(0, 0, 0,0.15);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btnRoll{
+  margin-top: 25px;
+  background: #5035FF;
+
+  padding: 10px 40px;
+  box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+  border-radius: 3.81277px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16.384px;
+  line-height: 19px;
+}
+.Rolls{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2px;
+  padding-left: 45px;
+  padding-right: 60px;
+
+}
+.Rolls h4{
+  margin-left: auto;
+}
